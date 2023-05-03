@@ -26,8 +26,8 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="265dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
             android:text="AyuSri"
             android:textColor="@color/black"
             android:textSize="50sp"
@@ -37,7 +37,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/createbutton"
+        android:id="@+id/creay"
         android:layout_width="291dp"
         android:layout_height="50dp"
         android:background="@drawable/roundstyle2"
