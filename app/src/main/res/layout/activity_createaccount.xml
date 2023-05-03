@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createaccount"
+    android:background="@drawable/bk"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="581dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/green2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="30dp"
+            android:text="AyuSri"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/createbutton"
+        android:layout_width="291dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/green4"
+        android:text="Create an Account"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <EditText
+        android:id="@+id/cemail"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="396dp"
+        android:background="@color/green3"
+        android:backgroundTint="#90DC93"
+        android:backgroundTintMode="src_in"
+        android:hint="   E-mail"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <EditText
+        android:id="@+id/cpassword1"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:background="@color/green3"
+        android:backgroundTint="#90DC93"
+        android:backgroundTintMode="src_in"
+        android:hint="   Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <EditText
+        android:id="@+id/cpassword2"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="224dp"
+        android:background="@color/green3"
+        android:backgroundTint="#90DC93"
+        android:backgroundTintMode="src_in"
+        android:hint="   Confirm Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="#D3044A"
+        android:text="Register"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="573dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

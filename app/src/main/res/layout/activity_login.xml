@@ -8,7 +8,7 @@
     android:background="@drawable/bk">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/lemail"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:background="@color/green3"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.419" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/lpassword"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:background="@color/green3"
