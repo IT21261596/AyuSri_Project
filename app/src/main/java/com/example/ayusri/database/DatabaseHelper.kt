@@ -16,11 +16,12 @@ class DatabaseHelper (context: Context):SQLiteOpenHelper(context, DB_NAME,null, 
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        val CREATE_TABLE = "CRETE TABLE $TABLE_NAME ($ID INTEGER  "
+        val CREATE_TABLE = "CREATE TABLE $TABLE_NAME ($ID INTEGER PRIMARY KEY , $TASK_NAME TEXT , $TASK_DETAILS TEXT);"
+        db?.execSQL(CREATE_TABLE)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
+         val DROP_TABLE = "DROP TABLE IF EXISTS $TABLE_NAME"
     }
 
 }
