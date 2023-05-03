@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login"
-    >
+    android:background="@drawable/bk">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/lemail"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:background="#90DC93"
+        android:background="@color/green3"
         android:backgroundTint="#90DC93"
         android:backgroundTintMode="src_in"
         android:hint="   E-mail"
@@ -22,13 +22,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.419" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/lpassword"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:background="#90DC93"
+        android:background="@color/green3"
         android:backgroundTint="#90DC93"
         android:backgroundTintMode="src_in"
         android:hint="   Password"
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintVertical_bias="0.546" />
 
     <Button
         android:id="@+id/sigin"
@@ -52,9 +52,66 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781" />
+        app:layout_constraintVertical_bias="0.674" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="581dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/green2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="30dp"
+            android:text="AyuSri"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/createaccount"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/green4"
+        android:text="Create an account"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="625dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/fogotpassword"
+        android:layout_width="347dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/green4"
+        android:text="Fogot Password?"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="554dp"
+        tools:visibility="visible" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
