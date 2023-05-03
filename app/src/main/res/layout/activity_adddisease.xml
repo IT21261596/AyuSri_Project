@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addmedicine"
+    tools:context=".adddisease"
     android:background="@drawable/bk">
 
     <Button
-        android:id="@+id/medicineaddbutton"
+        android:id="@+id/diseaseaddbutton"
         android:layout_width="216dp"
         android:layout_height="50dp"
         android:layout_marginStart="34dp"
@@ -52,7 +52,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
-        android:id="@+id/topicmedicine"
+        android:id="@+id/topicdisease"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:layout_marginStart="34dp"
@@ -61,7 +61,7 @@
         android:background="@color/white"
         android:backgroundTint="#FCFFFC"
         android:backgroundTintMode="src_in"
-        android:hint="   ENTER MEDICINE"
+        android:hint="   ENTER DISEASE"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"
@@ -74,24 +74,24 @@
         android:id="@+id/constraintLayout"
         android:layout_width="371dp"
         android:layout_height="406dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/green3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topicmedicine">
+        app:layout_constraintTop_toBottomOf="@+id/topicdisease">
 
         <EditText
-            android:id="@+id/prescription"
+            android:id="@+id/disesaseabout"
             android:layout_width="361dp"
             android:layout_height="289dp"
             android:layout_marginStart="34dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="34dp"
             android:background="@color/white"
             android:backgroundTint="#FCFFFC"
             android:backgroundTintMode="src_in"
-            android:hint="   ENTER PRESCRIPTION"
+            android:hint="   ENTER DESCRIPTION"
             android:imeOptions="actionDone"
             android:inputType="text"
             android:selectAllOnFocus="true"
@@ -100,5 +100,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
