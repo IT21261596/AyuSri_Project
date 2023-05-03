@@ -7,6 +7,54 @@
     tools:context=".login"
     android:background="@drawable/back">
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:background="#90DC93"
+        android:backgroundTint="#90DC93"
+        android:backgroundTintMode="src_in"
+        android:hint="   E-mail"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:background="#90DC93"
+        android:backgroundTint="#90DC93"
+        android:backgroundTintMode="src_in"
+        android:hint="   Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <Button
+        android:id="@+id/sigin"
+        android:layout_width="197dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#D3044A"
+        android:text="Sign In"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
