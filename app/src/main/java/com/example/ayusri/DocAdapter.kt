@@ -42,11 +42,11 @@ class DocAdapter (private var DocList:ArrayList<Doctors>):
     }
 
     class ViewHolder(itemView:View,clickListener: onItemClickListener):RecyclerView.ViewHolder(itemView){
-        val tvDoc:TextView = itemView.findViewById(R.id.textView2)
-        val tvPhone:TextView = itemView.findViewById(R.id.textView3)
-        val tvAddress:TextView = itemView.findViewById(R.id.textView4)
-        val tvEmail:TextView = itemView.findViewById(R.id.textView5)
-        val tvHos:TextView = itemView.findViewById(R.id.textView6)
+        val tvDoc:TextView = itemView.findViewById(R.id.docname)
+        val tvPhone:TextView = itemView.findViewById(R.id.docphone)
+        val tvAddress:TextView = itemView.findViewById(R.id.docaddress)
+        val tvEmail:TextView = itemView.findViewById(R.id.docemail)
+        val tvHos:TextView = itemView.findViewById(R.id.dochospital)
 
         init {
             itemView.setOnClickListener{

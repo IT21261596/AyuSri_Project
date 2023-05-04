@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/recCard"
+    android:backgroundTint="@color/teal_700"
     android:layout_marginStart="12dp"
     android:layout_marginEnd="12dp"
     android:layout_marginHorizontal="10dp"
@@ -24,10 +25,181 @@
             android:layout_marginStart="20dp"
             android:padding="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/baseline_person_24"
-            app:shapeAppearanceOverlay=""
+            android:src="@drawable/baseline_person_24"/>
+        
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/recTwrgwe"
+            android:text="Name"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/recImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
 
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docname"
+            android:text="Language"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recImage"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"/>
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage1"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_email_24"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docemfrwr"
+            android:text="Email"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/recImage1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docemail"
+            android:text="Language"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recImage1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage2"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_phone_android_24"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docwrg"
+            android:text="Phone"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/recImage2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docphone"
+            android:text="Language"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recImage2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage4"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_location_on_24"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docwrgasas"
+            android:text="Address"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/recImage4"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docaddress"
+            android:text="Language"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recImage4"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage3"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_local_hospital_24"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/docwrgas"
+            android:text="Hospital"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/recImage3"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/dochospital"
+            android:text="Language"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/recImage3"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"/>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
