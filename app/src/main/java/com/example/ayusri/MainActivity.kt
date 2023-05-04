@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             fun login(){
-                var intent =  Intent(this,login::class.java)
+                var intent =  Intent(this,loginmain::class.java)
                 startActivity(intent)
                 Toast.makeText(applicationContext,"Clicked Login",Toast.LENGTH_SHORT).show()
             }
