@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "776136260743",
+    "firebase_url": "https://mada-bff08-default-rtdb.firebaseio.com",
+    "project_id": "mada-bff08",
+    "storage_bucket": "mada-bff08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776136260743:android:796481fe61a5a4b9318c22",
+        "android_client_info": {
+          "package_name": "com.example.ayusri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776136260743-oja9ul2eridpmj4mva3e361v9da8pdte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkLuk_E0HqHrpnyy-tkox_S3nv8wxtnv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776136260743-oja9ul2eridpmj4mva3e361v9da8pdte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
