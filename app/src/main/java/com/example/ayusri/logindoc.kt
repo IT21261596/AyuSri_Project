@@ -15,10 +15,13 @@ class logindoc : AppCompatActivity() {
 
     lateinit var toggle : ActionBarDrawerToggle
 
+    private lateinit var signbtn:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_logindoc)
 
+
+        signbtn=findViewById(R.id.dsignin)
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -36,6 +39,10 @@ class logindoc : AppCompatActivity() {
             startActivity(intent)
         }
 
+        signbtn.setOnClickListener {
+            var i =  Intent(this,doctorView::class.java)
+            startActivity(i)
+        }
 
         navView.setNavigationItemSelectedListener {
             fun login(){
