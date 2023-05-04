@@ -10,13 +10,15 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
-class loginmain : AppCompatActivity() {
+
+class logindoc : AppCompatActivity() {
 
     lateinit var toggle : ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_loginmain)
+        setContentView(R.layout.activity_logindoc)
+
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -27,17 +29,10 @@ class loginmain : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        var Docbtn = findViewById<Button>(R.id.doctorL)
+        var Dcrbtn = findViewById<Button>(R.id.dcreate)
 
-        Docbtn.setOnClickListener{
-            var intent =  Intent(this,logindoc::class.java)
-            startActivity(intent)
-        }
-
-        var cusmbtn = findViewById<Button>(R.id.customerL)
-
-        cusmbtn.setOnClickListener{
-            var intent =  Intent(this,login::class.java)
+        Dcrbtn.setOnClickListener{
+            var intent =  Intent(this,docreg::class.java)
             startActivity(intent)
         }
 
@@ -86,4 +81,3 @@ class loginmain : AppCompatActivity() {
     }
 
 }
-
