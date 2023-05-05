@@ -5,23 +5,55 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 
 class logindoc : AppCompatActivity() {
 
     lateinit var toggle : ActionBarDrawerToggle
-
+    private lateinit var auth: FirebaseAuth
     private lateinit var signbtn:Button
+    lateinit var Email:EditText
+    lateinit var Password:EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_logindoc)
-
-
+        auth= FirebaseAuth.getInstance()
+        Email=findViewById(R.id.demail)
+        Password = findViewById(R.id.dpassword)
         signbtn=findViewById(R.id.dsignin)
+
+
+
+        //Login
+        signbtn.setOnClickListener {
+            if(checking()){
+                val email=Email.text.toString()
+                val password= Password.text.toString()
+                auth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            var intent =Intent(this,doctorView::class.java)
+                            intent.putExtra("email",email)
+                            startActivity(intent)
+                            finish()
+                        } else {
+                            Toast.makeText(this, "Wrong Details", Toast.LENGTH_LONG).show()
+                        }
+                    }
+            }
+            else{
+                Toast.makeText(this,"Enter the Details",Toast.LENGTH_LONG).show()
+            }
+        }
+
+
+
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -39,10 +71,7 @@ class logindoc : AppCompatActivity() {
             startActivity(intent)
         }
 
-        signbtn.setOnClickListener {
-            var i =  Intent(this,doctorView::class.java)
-            startActivity(i)
-        }
+
 
         navView.setNavigationItemSelectedListener {
             fun login(){
@@ -85,6 +114,15 @@ class logindoc : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+    private fun checking():Boolean
+    {
+        if(Email.text.toString().trim{it<=' '}.isNotEmpty()
+            && Password.text.toString().trim{it<=' '}.isNotEmpty())
+        {
+            return true
+        }
+        return false
     }
 
 }

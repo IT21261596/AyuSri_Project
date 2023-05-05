@@ -4,5 +4,5 @@ data class Disease (
     var disID : String? = null,
     var disTopic : String? = null,
     var disAdd : String? = null,
-    var disAddnew : String? = null,
+
         )
