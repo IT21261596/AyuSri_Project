@@ -7,7 +7,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".cusloginmain">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,71 +17,62 @@
 
         <Button
             android:id="@+id/locations"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="70dp"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="25dp"
             android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/green3"
+            android:backgroundTint="@color/button"
             android:text="Locations"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/medicines" />
-
-
-        <Button
-            android:id="@+id/medicines"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="70dp"
-            android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/green3"
-            android:text="MEDICINES"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/diseases" />
 
         <Button
-            android:id="@+id/diseases"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="70dp"
+            android:id="@+id/medicines"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="41dp"
             android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/green3"
-            android:text="DISEASES"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:backgroundTint="@color/button"
+            android:text="MEDICINES"
+            app:layout_constraintEnd_toStartOf="@+id/locations"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/doctor" />
 
+        <Button
+            android:id="@+id/diseases"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/roundstyle2"
+            android:backgroundTint="@color/button"
+            android:text="DISEASES"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <Button
             android:id="@+id/doctor"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="70dp"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="41dp"
             android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/green3"
+            android:backgroundTint="@color/button"
             android:text="DOCTORS"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/diseases"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="437dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/roundstyle"
             android:backgroundTint="@color/green2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +92,33 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="175dp"
+                android:layout_height="177dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="58dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/welcometag"
+            android:text="WELCOME"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

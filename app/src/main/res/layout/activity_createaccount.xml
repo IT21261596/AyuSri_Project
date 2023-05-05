@@ -49,93 +49,64 @@
         tools:layout_editor_absoluteY="183dp" />
 
     <EditText
-        android:id="@+id/cname"
-        android:layout_width="343dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="82dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/green3"
-        android:backgroundTint="#90DC93"
-        android:backgroundTintMode="src_in"
-        android:hint="   Name"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
-
-    <EditText
         android:id="@+id/cemail"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="396dp"
         android:background="@color/green3"
         android:backgroundTint="#90DC93"
         android:backgroundTintMode="src_in"
-        android:hint="   Email"
+        android:hint="   E-mail"
         android:imeOptions="actionDone"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cname" />
 
-
-    <EditText
-        android:id="@+id/cphone"
-        android:layout_width="343dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/green3"
-        android:backgroundTint="#90DC93"
-        android:backgroundTintMode="src_in"
-        android:hint="   Phone number"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cemail" />
-
-
+        />
     <EditText
         android:id="@+id/cpassword1"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
         android:background="@color/green3"
         android:backgroundTint="#90DC93"
         android:backgroundTintMode="src_in"
         android:hint="   Password"
         android:imeOptions="actionDone"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cphone" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <EditText
+        android:id="@+id/cpassword2"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="224dp"
+        android:background="@color/green3"
+        android:backgroundTint="#90DC93"
+        android:backgroundTintMode="src_in"
+        android:hint="   Confirm Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/registerbutton"
         android:layout_width="216dp"
         android:layout_height="50dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="95dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="#D3044A"
         android:text="Register"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cpassword1"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="573dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
