@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         disbtn=findViewById(R.id.diseases)
         docbtn=findViewById(R.id.doctor)
         docbtn.setOnClickListener{
-            var i = Intent(this,docFetching::class.java)
+            var i = Intent(this, docFetching::class.java)
             startActivity(i)
         }
 
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
 
         navView.setNavigationItemSelectedListener {
