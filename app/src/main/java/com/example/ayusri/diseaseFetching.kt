@@ -65,8 +65,12 @@ class diseaseFetching : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object:DisAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@diseaseFetching,MainActivity::class.java)
-
+                            val intent = Intent(this@diseaseFetching,DisDetailsActivity::class.java)
+                            //put extra
+                            intent.putExtra("disId", dislist[position].disID)
+                            intent.putExtra("disTopic", dislist[position].disTopic)
+                            intent.putExtra("disAdd", dislist[position].disAdd)
+                            startActivity(intent)
                         }
 
                     })
@@ -101,36 +105,37 @@ class diseaseFetching : AppCompatActivity() {
         btnAdd.setOnClickListener {
             val empName = disTopic.text.toString()
             val empAge = disAdd.text.toString()
-           // val empSalary = disAddnew.text.toString()
+            // val empSalary = disAddnew.text.toString()
 
             if (empName.isEmpty()) {
-                disTopic.error = "Please enter name"
+                disTopic.error = "Please enter Topic"
             }
             if (empAge.isEmpty()) {
-                disAdd.error = "Please enter age"
+                disAdd.error = "Please enter Discription"
             }
 //            if (empSalary.isEmpty()) {
 //                disAddnew.error = "Please enter salary"
 //            }
+            else {
+                val disId = dbRef.push().key!!
 
-            val disId = dbRef.push().key!!
+                val employee = Disease(disId, empName, empAge)
 
-            val employee = Disease(disId, empName, empAge)
+                dbRef.child(disId).setValue(employee)
+                    .addOnCompleteListener {
+                        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
 
-            dbRef.child(disId).setValue(employee)
-                .addOnCompleteListener {
-                    Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
-
-                    disTopic.text.clear()
-                    disAdd.text.clear()
-                  //  disAddnew.text.clear()
+                        disTopic.text.clear()
+                        disAdd.text.clear()
+                        //  disAddnew.text.clear()
 
 
-                }.addOnFailureListener { err ->
-                    Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
-                }
-            alertDialog.dismiss()
+                    }.addOnFailureListener { err ->
+                        Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
+                    }
+                alertDialog.dismiss()
 
+            }
         }
 
         }

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".docFetching"
+    tools:context=".discusfetch"
     android:background="@drawable/bk">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginBottom="640dp"
+        android:layout_marginBottom="580dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/green2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,9 +38,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/DisRecyclerView"
         android:layout_width="367dp"
-        android:layout_height="500dp"
+        android:layout_height="530dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="270dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="250dp"
         app:layout_constraintBottom_toBottomOf="parent"

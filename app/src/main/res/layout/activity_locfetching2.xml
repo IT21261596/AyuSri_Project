@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".docFetching"
+    tools:context=".location.locfetching"
     android:background="@drawable/bk">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +36,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/DisRecyclerView"
+        android:id="@+id/LocRecyclerView"
         android:layout_width="367dp"
         android:layout_height="480dp"
         android:layout_marginStart="10dp"
@@ -48,8 +48,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.258"
-        tools:listitem="@layout/dislist"
-         />
+        tools:listitem="@layout/loclist"
+        />
 
     <TextView
         android:id="@+id/tvLoadingData"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/addissub"
+        android:id="@+id/addlocsub"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="157dp"
@@ -75,5 +75,5 @@
         android:text="Add a disease"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DisRecyclerView" />
+        app:layout_constraintTop_toBottomOf="@+id/LocRecyclerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

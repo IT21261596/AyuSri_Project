@@ -8,12 +8,14 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.ayusri.location.locusfetch
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var docbtn: Button
     private lateinit var disbtn: Button
+    private lateinit var locbtn: Button
 
     lateinit var toggle : ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,13 +24,19 @@ class MainActivity : AppCompatActivity() {
 
         disbtn=findViewById(R.id.diseases)
         docbtn=findViewById(R.id.doctor)
+        locbtn = findViewById(R.id.locations)
         docbtn.setOnClickListener{
-            var i = Intent(this, docFetching::class.java)
+            var i = Intent(this, docCusfetch::class.java)
             startActivity(i)
         }
 
         disbtn.setOnClickListener{
             var i = Intent(this,discusfetch::class.java)
+            startActivity(i)
+        }
+
+        locbtn.setOnClickListener{
+            var i = Intent(this,locusfetch::class.java)
             startActivity(i)
         }
 
