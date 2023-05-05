@@ -50,7 +50,15 @@ class docFetching : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object:DocAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@docFetching,MainActivity::class.java)
+                            val intent = Intent(this@docFetching,DocDetailsActivity::class.java)
+                            //put extra
+                            intent.putExtra("docId", docList[position].docID)
+                            intent.putExtra("docName", docList[position].docName)
+                            intent.putExtra("docEmail", docList[position].docEmail)
+                            intent.putExtra("docPhone", docList[position].docPhone)
+                            intent.putExtra("docHospital", docList[position].docHospital)
+                            intent.putExtra("docAddress", docList[position].docAddress)
+                            startActivity(intent)
                         }
 
                     })

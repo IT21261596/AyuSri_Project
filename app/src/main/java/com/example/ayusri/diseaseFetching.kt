@@ -86,14 +86,14 @@ class diseaseFetching : AppCompatActivity() {
     private fun openInsertDialog() {
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
-        val mDialogView = inflater.inflate(R.layout.insert_disease_dialog, null)
+        val mDialogView = inflater.inflate(R.layout.activity_adddisease, null)
         mDialog.setView(mDialogView)
 
-        val disTopic = mDialogView.findViewById<EditText>(R.id.distopic)
-        val disAdd = mDialogView.findViewById<EditText>(R.id.disAdd)
-        val disAddnew = mDialogView.findViewById<EditText>(R.id.disAdd2)
+        val disTopic = mDialogView.findViewById<EditText>(R.id.topicdisease)
+        val disAdd = mDialogView.findViewById<EditText>(R.id.disesaseabout)
+      //  val disAddnew = mDialogView.findViewById<EditText>(R.id.disAdd2)
 
-        val btnAdd = mDialogView.findViewById<Button>(R.id.btnAddData)
+        val btnAdd = mDialogView.findViewById<Button>(R.id.diseaseaddbutton)
 
         val alertDialog = mDialog.create()
         alertDialog.show()
@@ -101,7 +101,7 @@ class diseaseFetching : AppCompatActivity() {
         btnAdd.setOnClickListener {
             val empName = disTopic.text.toString()
             val empAge = disAdd.text.toString()
-            val empSalary = disAddnew.text.toString()
+           // val empSalary = disAddnew.text.toString()
 
             if (empName.isEmpty()) {
                 disTopic.error = "Please enter name"
@@ -109,13 +109,13 @@ class diseaseFetching : AppCompatActivity() {
             if (empAge.isEmpty()) {
                 disAdd.error = "Please enter age"
             }
-            if (empSalary.isEmpty()) {
-                disAddnew.error = "Please enter salary"
-            }
+//            if (empSalary.isEmpty()) {
+//                disAddnew.error = "Please enter salary"
+//            }
 
             val disId = dbRef.push().key!!
 
-            val employee = Disease(disId, empName, empAge, empSalary)
+            val employee = Disease(disId, empName, empAge)
 
             dbRef.child(disId).setValue(employee)
                 .addOnCompleteListener {
@@ -123,7 +123,7 @@ class diseaseFetching : AppCompatActivity() {
 
                     disTopic.text.clear()
                     disAdd.text.clear()
-                    disAddnew.text.clear()
+                  //  disAddnew.text.clear()
 
 
                 }.addOnFailureListener { err ->
