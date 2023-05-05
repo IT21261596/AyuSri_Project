@@ -10,9 +10,14 @@ class doctorView : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doctor_view)
         var disbtn = findViewById<Button>(R.id.diseases)
+        var docbtn = findViewById<Button>(R.id.doctor)
 
         disbtn.setOnClickListener{
             var i = Intent(this,diseaseFetching::class.java)
+            startActivity(i)
+        }
+        docbtn.setOnClickListener{
+            var i = Intent(this,docFetching::class.java)
             startActivity(i)
         }
     }

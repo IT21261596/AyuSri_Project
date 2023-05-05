@@ -42,13 +42,14 @@ class DocDetailsActivity : AppCompatActivity() {
         }
     }
 
-    private fun deleteRecord(id: String) {
-        val dbRef =  FirebaseDatabase.getInstance().getReference("Doctors").child(id)
+    private fun deleteRecord(docId: String) {
+        val dbRef =  FirebaseDatabase.getInstance().getReference("Doctors").child(docId)
         val mTask = dbRef.removeValue()
 
         mTask.addOnSuccessListener {
             Toast.makeText(this,"Doctor data delete",Toast.LENGTH_LONG).show()
             val intent = Intent(this,docFetching::class.java)
+            startActivity(intent)
             finish()
 
         }.addOnFailureListener { error-> Toast.makeText(this,"Error ${error.message}",Toast.LENGTH_LONG).show() }
@@ -103,9 +104,9 @@ class DocDetailsActivity : AppCompatActivity() {
 
     }
 
-    private fun updateEmpData(id: String, name:String,email:String,phone:String,hospital:String,address: String) {
-        val dbRef = FirebaseDatabase.getInstance().getReference("Doctors").child(id)
-        val docInfo = Doctors(id,name,email,phone,hospital,address)
+    private fun updateEmpData(docId: String, name:String,email:String,phone:String,hospital:String,address: String) {
+        val dbRef = FirebaseDatabase.getInstance().getReference("Doctors").child(docId)
+        val docInfo = Doctors(docId,name,email,phone,hospital,address)
         dbRef.setValue(docInfo)
     }
 
