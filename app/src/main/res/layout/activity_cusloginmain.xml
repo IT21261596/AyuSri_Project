@@ -24,6 +24,7 @@
             android:textAlignment="center"
             android:textColor="#0C0B0B"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/diseases" />
 
@@ -36,6 +37,7 @@
             android:textAlignment="center"
             android:textColor="#0C0B0B"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/medicines" />
 
@@ -48,17 +50,17 @@
             android:textAlignment="center"
             android:textColor="#0C0B0B"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/locations" />
 
         <Button
             android:id="@+id/locations"
             android:layout_width="160dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/baseline_location1_on_24"
-            android:backgroundTint="@color/black"
+            android:layout_height="160dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/location3"
             android:text="."
             android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
@@ -67,27 +69,22 @@
         <Button
             android:id="@+id/medicines"
             android:layout_width="160dp"
-            android:layout_height="130dp"
+            android:layout_height="160dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="41dp"
-            android:background="@drawable/baseline_medicine_liquid_24"
-            android:backgroundTint="@color/black"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/medicine3"
             android:text="."
             android:textColor="#FFFAFA"
-            app:layout_constraintEnd_toStartOf="@+id/locations"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/doctor" />
 
         <Button
             android:id="@+id/diseases"
             android:layout_width="160dp"
-            android:layout_height="130dp"
+            android:layout_height="160dp"
             android:layout_marginTop="88dp"
             android:layout_marginEnd="25dp"
-            android:background="@drawable/baseline_disease_24"
-            android:backgroundTint="@color/black"
+            android:background="@drawable/diseases3"
             android:text="."
             android:textColor="#FFFCFC"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,16 +93,13 @@
         <Button
             android:id="@+id/doctor"
             android:layout_width="160dp"
-            android:layout_height="130dp"
+            android:layout_height="160dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="88dp"
-            android:layout_marginEnd="41dp"
-            android:background="@drawable/baseline_doctor_services_24"
-            android:backgroundTint="@color/black"
+            android:background="@drawable/doctor3"
+
             android:text="."
             android:textColor="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/diseases"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -169,6 +163,7 @@
             android:textAlignment="center"
             android:textColor="#0C0B0B"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/textView6"
             app:layout_constraintTop_toBottomOf="@+id/doctor" />
 
