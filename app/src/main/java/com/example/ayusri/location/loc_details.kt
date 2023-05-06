@@ -91,7 +91,7 @@ class loc_details : AppCompatActivity() {
             //we are setting update data to our textview
             tvDisTopic.text = etDisTopic.text.toString()
             tvDisAdd.text = etDis.text.toString()
-
+            tvDisloc.text = etphone.text.toString()
 
             alertDialog.dismiss()
         }

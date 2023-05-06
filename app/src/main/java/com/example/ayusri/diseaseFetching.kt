@@ -67,7 +67,7 @@ class diseaseFetching : AppCompatActivity() {
                         override fun onItemClick(position: Int) {
                             val intent = Intent(this@diseaseFetching,DisDetailsActivity::class.java)
                             //put extra
-                            intent.putExtra("disId", dislist[position].disID)
+                            intent.putExtra("disID", dislist[position].disID)
                             intent.putExtra("disTopic", dislist[position].disTopic)
                             intent.putExtra("disAdd", dislist[position].disAdd)
                             startActivity(intent)

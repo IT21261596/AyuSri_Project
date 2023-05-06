@@ -55,7 +55,7 @@ class DocDetailsActivity : AppCompatActivity() {
         }.addOnFailureListener { error-> Toast.makeText(this,"Error ${error.message}",Toast.LENGTH_LONG).show() }
     }
 
-    private fun openUpdateDialog(docID: String, docName: String) {
+    private fun openUpdateDialog(docId: String, docName: String) {
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
         val mDialogView = inflater.inflate(R.layout.updatedoc_dialog,null)
@@ -83,7 +83,7 @@ class DocDetailsActivity : AppCompatActivity() {
 
         btnupdate.setOnClickListener{
             updateEmpData(
-                docID,
+                docId,
                 etDocName.text.toString(),
                 etDocEmail.text.toString(),
                 etDocPhone.text.toString(),
@@ -111,7 +111,7 @@ class DocDetailsActivity : AppCompatActivity() {
     }
 
     private fun setValueToViews() {
-        tvDocId .text = intent.getStringExtra("docId")
+        tvDocId .text = intent.getStringExtra("docID")
         tvDocName.text = intent.getStringExtra("docName")
         tvDocEmail.text = intent.getStringExtra("docEmail")
         tvDocPhone.text = intent.getStringExtra("docPhone")

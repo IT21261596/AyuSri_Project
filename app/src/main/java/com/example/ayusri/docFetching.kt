@@ -52,7 +52,7 @@ class docFetching : AppCompatActivity() {
                         override fun onItemClick(position: Int) {
                             val intent = Intent(this@docFetching,DocDetailsActivity::class.java)
                             //put extra
-                            intent.putExtra("docId", docList[position].docID)
+                            intent.putExtra("docID", docList[position].docID)
                             intent.putExtra("docName", docList[position].docName)
                             intent.putExtra("docEmail", docList[position].docEmail)
                             intent.putExtra("docPhone", docList[position].docPhone)

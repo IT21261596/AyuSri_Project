@@ -35,7 +35,7 @@ class DisDetailsActivity : AppCompatActivity() {
         }
         btnDelete.setOnClickListener{
             deleteRecord(
-                intent.getStringExtra("disId").toString()
+                intent.getStringExtra("disID").toString()
             )
         }
     }
@@ -101,7 +101,7 @@ class DisDetailsActivity : AppCompatActivity() {
     }
 
     private fun setValueToViews() {
-        tvDisId .text = intent.getStringExtra("disId")
+        tvDisId .text = intent.getStringExtra("disID")
         tvDisTopic.text = intent.getStringExtra("disTopic")
         tvDisAdd.text = intent.getStringExtra("disAdd")
 
