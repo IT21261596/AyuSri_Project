@@ -12,6 +12,12 @@
         android:theme="@style/Theme.AyuSri"
         tools:targetApi="31">
         <activity
+            android:name=".Medidetailsactivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedecineFetch"
+            android:exported="false" />
+        <activity
             android:name=".docCusfetch"
             android:exported="false" />
         <activity
