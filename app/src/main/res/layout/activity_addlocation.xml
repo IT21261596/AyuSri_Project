@@ -12,16 +12,16 @@
         android:layout_width="216dp"
         android:layout_height="50dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="34dp"
         android:background="@drawable/roundstyle2"
-        android:backgroundTint="#D3044A"
+        android:backgroundTint="@color/button2"
         android:text="ADD"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/locationloc"
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -38,12 +38,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="151dp"
+            android:layout_height="151dp"
+            android:layout_marginEnd="94dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="265dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="cursive"
             android:text="AyuSri"
             android:textColor="@color/black"
             android:textSize="50sp"
@@ -52,73 +63,61 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <EditText
         android:id="@+id/locationname"
-        android:layout_width="343dp"
-        android:layout_height="50dp"
+        android:layout_width="365dp"
+        android:layout_height="80dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="34dp"
-        android:background="@color/white"
-        android:backgroundTint="#FCFFFC"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   ENTER NAME"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="371dp"
-        android:layout_height="406dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+    <EditText
+        android:id="@+id/locationloc"
+        android:layout_width="365dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="34dp"
         android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/green3"
+        android:backgroundTint="@color/welcome"
+        android:backgroundTintMode="src_in"
+        android:hint="   ENTER ADDRESS"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locationname">
+        app:layout_constraintTop_toBottomOf="@+id/locationphone" />
 
-        <EditText
-            android:id="@+id/locationloc"
-            android:layout_width="365dp"
-            android:layout_height="106dp"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="34dp"
-            android:background="@color/white"
-            android:backgroundTint="#FCFFFC"
-            android:backgroundTintMode="src_in"
-            android:hint="   ENTER LOCATION"
-            android:imeOptions="actionDone"
-            android:inputType="text"
-            android:selectAllOnFocus="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/locationphone"
-            android:layout_width="365dp"
-            android:layout_height="106dp"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="190dp"
-            android:layout_marginEnd="34dp"
-            android:background="@color/white"
-            android:backgroundTint="#FCFFFC"
-            android:backgroundTintMode="src_in"
-            android:hint="   ENTER LOCATION"
-            android:imeOptions="actionDone"
-            android:inputType="text"
-            android:selectAllOnFocus="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/locationphone"
+        android:layout_width="365dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/welcome"
+        android:backgroundTintMode="src_in"
+        android:hint="   ENTER LOCATION"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationname" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

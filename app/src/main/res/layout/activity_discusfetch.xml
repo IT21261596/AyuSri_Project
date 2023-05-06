@@ -19,14 +19,27 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="151dp"
+            android:layout_height="151dp"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="265dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="cursive"
             android:text="AyuSri"
             android:textColor="@color/black"
             android:textSize="50sp"
@@ -47,9 +60,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
-        tools:listitem="@layout/dislist"
-        />
+        app:layout_constraintVertical_bias="0.336"
+        tools:listitem="@layout/dislist" />
 
     <TextView
         android:id="@+id/tvLoadingData"
