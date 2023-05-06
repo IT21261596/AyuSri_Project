@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ayusri.Models.Doctors
+
 import com.google.firebase.database.*
 
 class docCusfetch : AppCompatActivity() {
@@ -50,15 +51,15 @@ class docCusfetch : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object:DocAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@docCusfetch,DocDetailsActivity::class.java)
-//                            //put extra
-//                            intent.putExtra("docId", docList[position].docID)
-//                            intent.putExtra("docName", docList[position].docName)
-//                            intent.putExtra("docEmail", docList[position].docEmail)
-//                            intent.putExtra("docPhone", docList[position].docPhone)
-//                            intent.putExtra("docHospital", docList[position].docHospital)
-//                            intent.putExtra("docAddress", docList[position].docAddress)
-//                            startActivity(intent)
+                            val intent = Intent(this@docCusfetch,test1::class.java)
+//                            put extra
+                            intent.putExtra("docID", docList[position].docID)
+                            intent.putExtra("docName", docList[position].docName)
+                            intent.putExtra("docEmail", docList[position].docEmail)
+                            intent.putExtra("docPhone", docList[position].docPhone)
+                            intent.putExtra("docHospital", docList[position].docHospital)
+                            intent.putExtra("docAddress", docList[position].docAddress)
+                            startActivity(intent)
                         }
 
                     })
