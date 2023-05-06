@@ -87,7 +87,7 @@
         android:layout_marginEnd="166dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/button2"
-        android:text="Add a disease"
+        android:text="ADD A HOSPITAL"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
