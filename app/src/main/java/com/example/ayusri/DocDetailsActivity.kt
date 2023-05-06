@@ -37,13 +37,13 @@ class DocDetailsActivity : AppCompatActivity() {
         }
         btnDelete.setOnClickListener{
             deleteRecord(
-                intent.getStringExtra("docId").toString()
+                intent.getStringExtra("docID").toString()
             )
         }
     }
 
-    private fun deleteRecord(docId: String) {
-        val dbRef =  FirebaseDatabase.getInstance().getReference("Doctors").child(docId)
+    private fun deleteRecord(docID: String) {
+        val dbRef =  FirebaseDatabase.getInstance().getReference("Doctors").child(docID)
         val mTask = dbRef.removeValue()
 
         mTask.addOnSuccessListener {
@@ -55,7 +55,7 @@ class DocDetailsActivity : AppCompatActivity() {
         }.addOnFailureListener { error-> Toast.makeText(this,"Error ${error.message}",Toast.LENGTH_LONG).show() }
     }
 
-    private fun openUpdateDialog(docId: String, docName: String) {
+    private fun openUpdateDialog(docID: String, docName: String) {
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
         val mDialogView = inflater.inflate(R.layout.updatedoc_dialog,null)
@@ -83,7 +83,7 @@ class DocDetailsActivity : AppCompatActivity() {
 
         btnupdate.setOnClickListener{
             updateEmpData(
-                docId,
+                docID,
                 etDocName.text.toString(),
                 etDocEmail.text.toString(),
                 etDocPhone.text.toString(),
@@ -104,9 +104,9 @@ class DocDetailsActivity : AppCompatActivity() {
 
     }
 
-    private fun updateEmpData(docId: String, name:String,email:String,phone:String,hospital:String,address: String) {
-        val dbRef = FirebaseDatabase.getInstance().getReference("Doctors").child(docId)
-        val docInfo = Doctors(docId,name,email,phone,hospital,address)
+    private fun updateEmpData(docID: String, docName:String,docEmail:String,docPhone:String,docHospital:String,docAddress: String) {
+        val dbRef = FirebaseDatabase.getInstance().getReference("Doctors").child(docID)
+        val docInfo = Doctors(docID,docName,docEmail,docPhone,docHospital,docAddress)
         dbRef.setValue(docInfo)
     }
 

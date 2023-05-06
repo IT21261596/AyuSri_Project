@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".createaccount"
     android:background="@drawable/bk"
+    android:textAlignment="center"
 
-    >
+    tools:context=".createaccount">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
@@ -20,14 +21,25 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="151dp"
+            android:layout_height="151dp"
+            android:layout_marginEnd="94dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="cursive"
             android:text="AyuSri"
             android:textColor="@color/black"
             android:textSize="50sp"
@@ -38,31 +50,33 @@
 
     <Button
         android:id="@+id/creay"
-        android:layout_width="291dp"
+        android:layout_width="343dp"
         android:layout_height="50dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/green4"
         android:text="Create an Account"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="20sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="183dp" />
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="184dp" />
 
     <EditText
         android:id="@+id/cname"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/green3"
-        android:backgroundTint="#90DC93"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Name"
         android:imeOptions="actionDone"
         android:inputType="text"
-
         android:selectAllOnFocus="true"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
@@ -74,13 +88,14 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/green3"
-        android:backgroundTint="#90DC93"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Email"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cname" />
@@ -93,13 +108,14 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/green3"
-        android:backgroundTint="#90DC93"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Phone number"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cemail" />
@@ -112,13 +128,14 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/green3"
-        android:backgroundTint="#90DC93"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Password"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cphone" />
@@ -127,11 +144,11 @@
         android:id="@+id/registerbutton"
         android:layout_width="216dp"
         android:layout_height="50dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="95dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="34dp"
         android:background="@drawable/roundstyle2"
-        android:backgroundTint="#D3044A"
+        android:backgroundTint="@color/button2"
         android:text="Register"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

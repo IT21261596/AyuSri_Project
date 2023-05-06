@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.drawerlayout.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".cusloginmain">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,15 +15,51 @@
         android:background="@drawable/bk">
 
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="53dp"
+            android:text="DISEASES"
+            android:textAlignment="center"
+            android:textColor="#0C0B0B"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diseases" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="96dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="107dp"
+            android:text="MEDICINE"
+            android:textAlignment="center"
+            android:textColor="#0C0B0B"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/medicines" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="96dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="53dp"
+            android:text="LOCATIONS"
+            android:textAlignment="center"
+            android:textColor="#0C0B0B"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locations" />
+
         <Button
             android:id="@+id/locations"
             android:layout_width="160dp"
             android:layout_height="130dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/button"
-            android:text="Locations"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/baseline_location1_on_24"
+            android:backgroundTint="@color/black"
+            android:text="."
             android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/diseases" />
@@ -33,13 +69,14 @@
             android:layout_width="160dp"
             android:layout_height="130dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="41dp"
-            android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/button"
-            android:text="MEDICINES"
-            android:textColor="#000000"
+            android:background="@drawable/baseline_medicine_liquid_24"
+            android:backgroundTint="@color/black"
+            android:text="."
+            android:textColor="#FFFAFA"
             app:layout_constraintEnd_toStartOf="@+id/locations"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/doctor" />
 
@@ -47,12 +84,12 @@
             android:id="@+id/diseases"
             android:layout_width="160dp"
             android:layout_height="130dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="88dp"
             android:layout_marginEnd="25dp"
-            android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/button"
-            android:text="DISEASES"
-            android:textColor="#000000"
+            android:background="@drawable/baseline_disease_24"
+            android:backgroundTint="@color/black"
+            android:text="."
+            android:textColor="#FFFCFC"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -61,14 +98,14 @@
             android:layout_width="160dp"
             android:layout_height="130dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="88dp"
             android:layout_marginEnd="41dp"
-            android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/button"
-            android:text="DOCTORS"
-            android:textColor="#070707"
+            android:background="@drawable/baseline_doctor_services_24"
+            android:backgroundTint="@color/black"
+            android:text="."
+            android:textColor="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/diseases"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -87,8 +124,8 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="265dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="244dp"
+                android:layout_marginTop="44dp"
                 android:fontFamily="cursive"
                 android:text="AyuSri"
                 android:textColor="@color/black"
@@ -98,9 +135,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="175dp"
-                android:layout_height="177dp"
-                android:layout_marginStart="4dp"
+                android:layout_width="151dp"
+                android:layout_height="151dp"
                 android:layout_marginEnd="58dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView"
@@ -116,13 +152,25 @@
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_marginTop="20dp"
-            android:background="@color/welcometag"
+            android:background="@color/green4"
             android:text="WELCOME"
             android:textAlignment="center"
             android:textSize="35sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="96dp"
+            android:layout_height="21dp"
+            android:layout_marginEnd="107dp"
+            android:text="DOCTORS"
+            android:textAlignment="center"
+            android:textColor="#0C0B0B"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/doctor" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -132,9 +180,9 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

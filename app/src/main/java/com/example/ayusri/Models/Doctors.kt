@@ -6,5 +6,5 @@ data class Doctors (
     var docEmail : String? = null,
     var docPhone : String? = null,
     var docHospital : String? = null,
-    var docAddress : String? = null
+    var docAddress : String? = null,
 )

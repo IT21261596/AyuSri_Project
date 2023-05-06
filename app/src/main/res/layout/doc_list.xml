@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/recCard"
-    android:backgroundTint="@color/teal_700"
+    android:backgroundTint="@color/button"
     android:layout_marginStart="12dp"
     android:layout_marginEnd="12dp"
     android:layout_marginHorizontal="10dp"
@@ -19,35 +19,35 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recImage"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:id="@+id/recImage"
             android:layout_marginStart="20dp"
             android:padding="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/baseline_person_24"/>
-        
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:id="@+id/recTwrgwe"
-            android:text="Name"
-            android:textColor="@color/purple_200"
-            android:textSize="20sp"
-            android:layout_toEndOf="@+id/recImage"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"/>
+            android:src="@drawable/baseline_person_24" />
 
         <TextView
+            android:id="@+id/recTwrgwe"
             android:layout_width="120dp"
             android:layout_height="30dp"
-            android:id="@+id/docname"
-            android:text="Language"
-            android:textColor="@color/purple_200"
-            android:textSize="20sp"
-            android:layout_toEndOf="@id/recImage"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="150dp"/>
+            android:layout_toEndOf="@+id/recImage"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/docname"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="Language"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
@@ -70,7 +70,7 @@
             android:layout_height="30dp"
             android:id="@+id/docemfrwr"
             android:text="Email"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@+id/recImage1"
             android:layout_marginTop="20dp"
@@ -81,7 +81,7 @@
             android:layout_height="30dp"
             android:id="@+id/docemail"
             android:text="Language"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@id/recImage1"
             android:layout_marginTop="20dp"
@@ -108,7 +108,7 @@
             android:layout_height="30dp"
             android:id="@+id/docwrg"
             android:text="Phone"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@+id/recImage2"
             android:layout_marginTop="20dp"
@@ -119,7 +119,7 @@
             android:layout_height="30dp"
             android:id="@+id/docphone"
             android:text="Language"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@id/recImage2"
             android:layout_marginTop="20dp"
@@ -146,7 +146,7 @@
             android:layout_height="30dp"
             android:id="@+id/docwrgasas"
             android:text="Address"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@+id/recImage4"
             android:layout_marginTop="20dp"
@@ -157,7 +157,7 @@
             android:layout_height="30dp"
             android:id="@+id/docaddress"
             android:text="Language"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@id/recImage4"
             android:layout_marginTop="20dp"
@@ -184,7 +184,7 @@
             android:layout_height="30dp"
             android:id="@+id/docwrgas"
             android:text="Hospital"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@+id/recImage3"
             android:layout_marginTop="20dp"
@@ -195,7 +195,7 @@
             android:layout_height="30dp"
             android:id="@+id/dochospital"
             android:text="Language"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_toEndOf="@id/recImage3"
             android:layout_marginTop="20dp"

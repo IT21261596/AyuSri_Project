@@ -14,28 +14,31 @@
     app:cardCornerRadius="20dp"
     app:cardElevation="8dp">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:background="@color/button">
 
         <EditText
             android:id="@+id/diseasetopic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="369dp"
+            android:layout_height="63dp"
             android:layout_marginTop="20dp"
             android:hint="Disease"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/diseasedis"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="369dp"
+            android:layout_height="63dp"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Discription"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:textColor="#000000" />
 
 
         <Button
@@ -44,7 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="UPDATE" />
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/button2"
+            android:text="UPDATE"
+            android:textColor="#000000" />
 
 
     </LinearLayout>
