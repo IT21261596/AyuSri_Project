@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.DocProfileview"
+    android:background="@drawable/bk">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="640dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/green2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="151dp"
+            android:layout_height="151dp"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="cursive"
+            android:text="AyuSri"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tvLoadingData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Data....."
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_person_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/recTwrgwe"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recImage"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/docname"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="98dp"
+        android:text="Language"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/recTwrgwe"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recImage1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_email_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recImage" />
+
+    <TextView
+        android:id="@+id/docemfrwr"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recImage1"
+        app:layout_constraintTop_toBottomOf="@+id/recTwrgwe" />
+
+    <TextView
+        android:id="@+id/docemail"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="116dp"
+        android:text="Language"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docname" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recImage2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_phone_android_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recImage1" />
+
+    <TextView
+        android:id="@+id/docwrg"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recImage2"
+        app:layout_constraintTop_toBottomOf="@+id/docemfrwr" />
+
+    <TextView
+        android:id="@+id/docphone"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="34dp"
+        android:text="Language"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/docwrg"
+        app:layout_constraintTop_toBottomOf="@+id/docemail" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recImage3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_local_hospital_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recImage2" />
+
+    <TextView
+        android:id="@+id/docwrgas"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Hospital"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recImage3"
+        app:layout_constraintTop_toBottomOf="@+id/docwrg" />
+
+    <TextView
+        android:id="@+id/dochospital"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="66dp"
+        android:text="Language"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/docwrgas"
+        app:layout_constraintTop_toBottomOf="@+id/docphone" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/recImage4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_location_on_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recImage3" />
+
+    <TextView
+        android:id="@+id/docwrgasas"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="66dp"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recImage4"
+        app:layout_constraintTop_toBottomOf="@+id/docwrgas" />
+
+    <TextView
+        android:id="@+id/docaddress"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="216dp"
+        android:text="Language"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/docwrgasas"
+        app:layout_constraintTop_toBottomOf="@+id/docemail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
