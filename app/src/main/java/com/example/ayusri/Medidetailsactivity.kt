@@ -12,7 +12,6 @@ import com.example.ayusri.Models.Medicine
 import com.google.firebase.database.FirebaseDatabase
 
 class Medidetailsactivity : AppCompatActivity() {
-    private lateinit var tvDisId: TextView
     private lateinit var tvDisTopic: TextView
     private lateinit var tvDisAdd: TextView
 
@@ -100,14 +99,14 @@ class Medidetailsactivity : AppCompatActivity() {
     }
 
     private fun setValueToViews() {
-        tvDisId .text = intent.getStringExtra("mediId")
+
         tvDisTopic.text = intent.getStringExtra("mediTopic")
         tvDisAdd.text = intent.getStringExtra("mediAdd")
 
     }
 
     private fun initView() {
-        tvDisId = findViewById(R.id.tvDisId)
+
         tvDisTopic = findViewById(R.id.tvdisTopic)
         tvDisAdd = findViewById(R.id.tvDisAdd)
 

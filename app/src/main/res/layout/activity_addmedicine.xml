@@ -94,7 +94,7 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
-        android:hint="   ENTER PRESCRIPTION"
+        android:hint="   ENTER DISSCRIPTION"
         android:imeOptions="actionDone"
         android:inputType="text"
         android:selectAllOnFocus="true"

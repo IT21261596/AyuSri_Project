@@ -83,14 +83,14 @@ class MedecineFetch : AppCompatActivity() {
     private fun openInsertDialog() {
         val mDialog = AlertDialog.Builder(this)
         val inflater = layoutInflater
-        val mDialogView = inflater.inflate(R.layout.activity_adddisease, null)
+        val mDialogView = inflater.inflate(R.layout.activity_addmedicine, null)
         mDialog.setView(mDialogView)
 
-        val disTopic = mDialogView.findViewById<EditText>(R.id.topicdisease)
-        val disAdd = mDialogView.findViewById<EditText>(R.id.disesaseabout)
+        val disTopic = mDialogView.findViewById<EditText>(R.id.topicmedicine)
+        val disAdd = mDialogView.findViewById<EditText>(R.id.prescription)
         //  val disAddnew = mDialogView.findViewById<EditText>(R.id.disAdd2)
 
-        val btnAdd = mDialogView.findViewById<Button>(R.id.diseaseaddbutton)
+        val btnAdd = mDialogView.findViewById<Button>(R.id.medicineaddbutton)
 
         val alertDialog = mDialog.create()
         alertDialog.show()
