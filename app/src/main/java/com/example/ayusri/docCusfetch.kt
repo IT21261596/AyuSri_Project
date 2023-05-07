@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ayusri.Adapters.DocAdapter
 import com.example.ayusri.Models.Doctors
 
 import com.google.firebase.database.*
@@ -49,7 +50,7 @@ class docCusfetch : AppCompatActivity() {
                     val mAdapter = DocAdapter(docList)
                     DocRecyclerView.adapter = mAdapter
 
-                    mAdapter.setOnItemClickListener(object:DocAdapter.onItemClickListener{
+                    mAdapter.setOnItemClickListener(object: DocAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
                             val intent = Intent(this@docCusfetch,test1::class.java)
 //                            put extra

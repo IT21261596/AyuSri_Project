@@ -5,8 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ayusri.DocAdapter
-import com.example.ayusri.Models.Disease
 import com.example.ayusri.Models.Medicine
 import com.example.ayusri.R
 

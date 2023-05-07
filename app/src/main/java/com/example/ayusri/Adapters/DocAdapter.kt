@@ -1,17 +1,17 @@
-package com.example.ayusri
+package com.example.ayusri.Adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.ayusri.Models.Doctors
+import com.example.ayusri.R
 
 class DocAdapter (private var DocList:ArrayList<Doctors>):
     RecyclerView.Adapter<DocAdapter.ViewHolder>() {
 
-    private lateinit var mListener:onItemClickListener
+    private lateinit var mListener: onItemClickListener
     interface onItemClickListener{
         fun onItemClick(position: Int)
 
@@ -22,12 +22,12 @@ class DocAdapter (private var DocList:ArrayList<Doctors>):
 
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.doc_list,parent,false)
         return ViewHolder(itemView,mListener)
     }
 
-    override fun onBindViewHolder(holder:ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentDoc = DocList[position]
         holder.tvDoc.text = currentDoc.docName
         holder.tvPhone.text = currentDoc.docPhone
