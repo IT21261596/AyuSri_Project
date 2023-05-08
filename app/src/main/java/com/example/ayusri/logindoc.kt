@@ -67,7 +67,7 @@ class logindoc : AppCompatActivity() {
         var Dcrbtn = findViewById<Button>(R.id.dcreate)
 
         Dcrbtn.setOnClickListener{
-            var intent =  Intent(this,docreg::class.java)
+            var intent =  Intent(this,createaccount::class.java)
             startActivity(intent)
         }
 
