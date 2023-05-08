@@ -32,7 +32,7 @@ class MediAdapter (private var DisList:ArrayList<Medicine>):
         val currentDoc = DisList[position]
         holder.tvtop.text = currentDoc.mediTopic
         holder.tvdis.text = currentDoc.mediAdd
-        // holder.tvpres.text = currentDoc.disAddnew
+        holder.tvpres.text = currentDoc.mediPrice
 
 
     }
@@ -45,7 +45,7 @@ class MediAdapter (private var DisList:ArrayList<Medicine>):
         RecyclerView.ViewHolder(itemView) {
         val tvtop: TextView = itemView.findViewById(R.id.distop)
         val tvdis: TextView = itemView.findViewById(R.id.disdec)
-        //val tvpres: TextView = itemView.findViewById(R.id.dispres)
+        val tvpres: TextView = itemView.findViewById(R.id.medprice)
 
         init {
             itemView.setOnClickListener {

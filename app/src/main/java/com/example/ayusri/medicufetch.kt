@@ -1,23 +1,23 @@
 package com.example.ayusri
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ayusri.Adapters.DisAdapter
 import com.example.ayusri.Adapters.MediAdapter
-import com.example.ayusri.Models.Disease
 import com.example.ayusri.Models.Medicine
-import com.google.firebase.database.*
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
-class MedecineFetch : AppCompatActivity() {
+class medicufetch : AppCompatActivity() {
     private lateinit var DisRecyclerView: RecyclerView
     private lateinit var tvLoadingData: TextView
     private lateinit var medilist: ArrayList<Medicine>
@@ -27,10 +27,8 @@ class MedecineFetch : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_medecine_fetch)
-        var addisbtn=findViewById<Button>(R.id.addissub)
-        addisbtn.setOnClickListener{
-            openInsertDialog()
-        }
+
+
         DisRecyclerView = findViewById(R.id.DisRecyclerView)
         DisRecyclerView.layoutManager = LinearLayoutManager(this)
         DisRecyclerView.setHasFixedSize(true)
@@ -40,6 +38,7 @@ class MedecineFetch : AppCompatActivity() {
 
         getDisease()
     }
+
     private fun getDisease() {
         DisRecyclerView.visibility = View.GONE
         tvLoadingData.visibility = View.VISIBLE
@@ -57,9 +56,9 @@ class MedecineFetch : AppCompatActivity() {
                     val mAdapter = MediAdapter(medilist)
                     DisRecyclerView.adapter = mAdapter
 
-                    mAdapter.setOnItemClickListener(object:MediAdapter.onItemClickListener{
+                    mAdapter.setOnItemClickListener(object : MediAdapter.onItemClickListener {
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@MedecineFetch,Medidetailsactivity::class.java)
+                            val intent = Intent(this@medicufetch, buyyMedicine::class.java)
                             //put extra
                             intent.putExtra("mediID", medilist[position].mediID)
                             intent.putExtra("mediTopic", medilist[position].mediTopic)
@@ -81,58 +80,4 @@ class MedecineFetch : AppCompatActivity() {
 
         })
     }
-    private fun openInsertDialog() {
-        val mDialog = AlertDialog.Builder(this)
-        val inflater = layoutInflater
-        val mDialogView = inflater.inflate(R.layout.activity_addmedicine, null)
-        mDialog.setView(mDialogView)
-
-        val disTopic = mDialogView.findViewById<EditText>(R.id.topicmedicine)
-        val disAdd = mDialogView.findViewById<EditText>(R.id.prescription)
-        val medprice = mDialogView.findViewById<EditText>(R.id.medprice)
-
-        val btnAdd = mDialogView.findViewById<Button>(R.id.medicineaddbutton)
-
-        val alertDialog = mDialog.create()
-        alertDialog.show()
-        dbRef = FirebaseDatabase.getInstance().getReference("Medicines")
-        btnAdd.setOnClickListener {
-            val empName = disTopic.text.toString()
-            val empAge = disAdd.text.toString()
-             val empSalary = medprice.text.toString()
-
-            if (empName.isEmpty()) {
-                disTopic.error = "Please enter Topic"
-            }
-            if (empAge.isEmpty()) {
-                disAdd.error = "Please enter Discription"
-            }
-            if (empSalary.isEmpty()) {
-                medprice.error = "Please enter salary"
-            }
-            else {
-                val disId = dbRef.push().key!!
-
-                val employee = Medicine(disId, empName, empAge,empSalary)
-
-                dbRef.child(disId).setValue(employee)
-                    .addOnCompleteListener {
-                        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
-
-                        disTopic.text.clear()
-                        disAdd.text.clear()
-                        medprice.text.clear()
-
-
-                    }.addOnFailureListener { err ->
-                        Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
-                    }
-                alertDialog.dismiss()
-
-            }
-        }
-
-    }
-
-
 }
