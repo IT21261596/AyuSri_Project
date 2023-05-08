@@ -54,7 +54,7 @@ class cusloginmain : AppCompatActivity() {
             startActivity(i)
         }
         medibtn.setOnClickListener{
-            var i = Intent(this, MedecineFetch::class.java)
+            var i = Intent(this, medicufetch::class.java)
             startActivity(i)
         }
 
