@@ -14,6 +14,7 @@ import com.google.firebase.database.FirebaseDatabase
 class Medidetailsactivity : AppCompatActivity() {
     private lateinit var tvDisTopic: TextView
     private lateinit var tvDisAdd: TextView
+    private lateinit var medprice: TextView
 
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
@@ -102,6 +103,7 @@ class Medidetailsactivity : AppCompatActivity() {
 
         tvDisTopic.text = intent.getStringExtra("mediTopic")
         tvDisAdd.text = intent.getStringExtra("mediAdd")
+        medprice.text = intent.getStringExtra("mediPrice")
 
     }
 
@@ -109,7 +111,7 @@ class Medidetailsactivity : AppCompatActivity() {
 
         tvDisTopic = findViewById(R.id.tvdisTopic)
         tvDisAdd = findViewById(R.id.tvDisAdd)
-
+         medprice = findViewById(R.id.medprice)
 
 
         btnUpdate = findViewById(R.id.btnUpdate)
