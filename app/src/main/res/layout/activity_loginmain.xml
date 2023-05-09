@@ -77,7 +77,6 @@
             android:id="@+id/doctorL"
             android:layout_width="248dp"
             android:layout_height="54dp"
-            app:strokecolor="@drawable/white"
             android:layout_marginStart="80dp"
             android:layout_marginTop="136dp"
             android:layout_marginEnd="80dp"
