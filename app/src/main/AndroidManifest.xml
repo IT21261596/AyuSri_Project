@@ -12,25 +12,16 @@
         android:theme="@style/Theme.AyuSri"
         tools:targetApi="31">
         <activity
+            android:name=".calculate.ClientSetOrders"
+            android:exported="false" />
+        <activity
+            android:name=".calculate.MedicalMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".medicufetch"
             android:exported="false" />
         <activity
-            android:name=".Thankyou"
-            android:exported="false" />
-        <activity
-            android:name=".buyyMedicine"
-            android:exported="false" />
-        <activity
-            android:name=".buyMedicine"
-            android:exported="false" />
-        <activity
-            android:name=".Doctor.DocProfileview"
-            android:exported="false" />
-        <activity
             android:name=".Doctor.DocProfile"
-            android:exported="false" />
-        <activity
-            android:name=".Userauth"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

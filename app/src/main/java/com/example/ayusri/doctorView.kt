@@ -14,6 +14,7 @@ class doctorView : AppCompatActivity() {
         var docbtn = findViewById<Button>(R.id.doctor)
         var locbtn = findViewById<Button>(R.id.locations)
         var medibtn = findViewById<Button>(R.id.medicines)
+        var docregs = findViewById<Button>(R.id.docreg)
 
         disbtn.setOnClickListener{
             var i = Intent(this,diseaseFetching::class.java)
@@ -29,6 +30,10 @@ class doctorView : AppCompatActivity() {
         }
         medibtn.setOnClickListener{
             var i = Intent(this,MedecineFetch::class.java)
+            startActivity(i)
+        }
+        docregs.setOnClickListener {
+            var i = Intent(this,docreg::class.java)
             startActivity(i)
         }
 

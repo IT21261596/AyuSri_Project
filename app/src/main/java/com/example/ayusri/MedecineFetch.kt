@@ -64,7 +64,7 @@ class MedecineFetch : AppCompatActivity() {
                             intent.putExtra("mediID", medilist[position].mediID)
                             intent.putExtra("mediTopic", medilist[position].mediTopic)
                             intent.putExtra("mediAdd", medilist[position].mediAdd)
-                            intent.putExtra("mediPrice", medilist[position].mediPrice)
+
                             startActivity(intent)
                         }
 
@@ -89,7 +89,7 @@ class MedecineFetch : AppCompatActivity() {
 
         val disTopic = mDialogView.findViewById<EditText>(R.id.topicmedicine)
         val disAdd = mDialogView.findViewById<EditText>(R.id.prescription)
-        val medprice = mDialogView.findViewById<EditText>(R.id.medprice)
+
 
         val btnAdd = mDialogView.findViewById<Button>(R.id.medicineaddbutton)
 
@@ -99,7 +99,7 @@ class MedecineFetch : AppCompatActivity() {
         btnAdd.setOnClickListener {
             val empName = disTopic.text.toString()
             val empAge = disAdd.text.toString()
-             val empSalary = medprice.text.toString()
+
 
             if (empName.isEmpty()) {
                 disTopic.error = "Please enter Topic"
@@ -107,13 +107,11 @@ class MedecineFetch : AppCompatActivity() {
             if (empAge.isEmpty()) {
                 disAdd.error = "Please enter Discription"
             }
-            if (empSalary.isEmpty()) {
-                medprice.error = "Please enter salary"
-            }
+
             else {
                 val disId = dbRef.push().key!!
 
-                val employee = Medicine(disId, empName, empAge,empSalary)
+                val employee = Medicine(disId, empName, empAge)
 
                 dbRef.child(disId).setValue(employee)
                     .addOnCompleteListener {
@@ -121,7 +119,7 @@ class MedecineFetch : AppCompatActivity() {
 
                         disTopic.text.clear()
                         disAdd.text.clear()
-                        medprice.text.clear()
+
 
 
                     }.addOnFailureListener { err ->

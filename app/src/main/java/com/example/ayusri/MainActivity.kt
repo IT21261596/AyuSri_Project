@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         docbtn=findViewById(R.id.doctor)
         locbtn = findViewById(R.id.locations)
         docbtn.setOnClickListener{
-            var i = Intent(this, docCusfetch::class.java)
+            var i = Intent(this, medicufetch::class.java)
             startActivity(i)
         }
 

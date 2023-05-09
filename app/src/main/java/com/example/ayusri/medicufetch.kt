@@ -1,5 +1,6 @@
 package com.example.ayusri
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,10 +12,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import buyyMedicine
 import com.example.ayusri.Adapters.DisAdapter
 import com.example.ayusri.Adapters.MediAdapter
 import com.example.ayusri.Models.Disease
 import com.example.ayusri.Models.Medicine
+import com.example.ayusri.calculate.MedicalMainActivity
 import com.google.firebase.database.*
 
 class medicufetch : AppCompatActivity() {
@@ -56,12 +59,12 @@ class medicufetch : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object:MediAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@medicufetch,buyyMedicine::class.java)
+                            val intent = Intent(this@medicufetch, MedicalMainActivity::class.java)
                             //put extra
                             intent.putExtra("mediID", medilist[position].mediID)
                             intent.putExtra("mediTopic", medilist[position].mediTopic)
                             intent.putExtra("mediAdd", medilist[position].mediAdd)
-                            intent.putExtra("mediPrice", medilist[position].mediPrice)
+
                             startActivity(intent)
                         }
 

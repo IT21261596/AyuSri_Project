@@ -14,22 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="40dp"
-        tools:context=".testScroll.test1">
+        tools:context=".calculate.MedicalMainActivity">
 
-
-        <TextView
-            android:id="@+id/consulm"
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="5dp"
-            android:text="Consultation Method"
-            android:textSize="26sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cusAddress" />
 
         <EditText
             android:id="@+id/cusAddress"
@@ -40,8 +26,8 @@
             android:layout_marginEnd="5dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Phone"
-            android:textSize="26sp"
+            android:hint="Address"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,8 +40,8 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="5dp"
-            android:text="Customer Phone number"
-            android:textSize="26sp"
+            android:text="Customer Address"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Doctor Consultation"
+                android:text="Buy Medicine"
                 android:textAlignment="center"
                 android:textSize="35sp" />
         </LinearLayout>
@@ -110,7 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Doc Name"
+                        android:text="Medicine"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -122,7 +108,7 @@
                     android:layout_weight="1.4">
 
                     <TextView
-                        android:id="@+id/tvDocName"
+                        android:id="@+id/tvmedicine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -157,7 +143,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Doc Email"
+                        android:text="Price"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -169,7 +155,7 @@
                     android:layout_weight="1.4">
 
                     <TextView
-                        android:id="@+id/tvDocEmail"
+                        android:id="@+id/tvprice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -206,7 +192,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Doc Phone"
+                        android:text="Discription"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -216,7 +202,7 @@
                     android:layout_weight="1.4">
 
                     <TextView
-                        android:id="@+id/tvDocPhone"
+                        android:id="@+id/tvDiscription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -231,114 +217,6 @@
 
 
             </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-
-                >
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.6"
-                    >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Doc Hospital"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-
-
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.4">
-
-                    <TextView
-                        android:id="@+id/tvDocHos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text=""
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-
-                        />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-
-                >
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.6">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-
-                        android:gravity="center"
-                        android:text="Doc Address"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-
-
-                        />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1.4">
-
-                    <TextView
-                        android:id="@+id/tvDocAddress"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text=""
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-
-                        />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
 
 
         </LinearLayout>
@@ -348,14 +226,14 @@
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="82dp"
             android:layout_marginEnd="5dp"
-            android:text="Customer Age"
-            android:textSize="26sp"
+            android:text="Customer Name"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.845"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/qty" />
+            app:layout_constraintTop_toBottomOf="@+id/amount" />
 
         <EditText
             android:id="@+id/qty"
@@ -366,8 +244,8 @@
             android:layout_marginEnd="5dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name"
-            android:textSize="22sp"
+            android:hint="Quantuty"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.464"
             app:layout_constraintStart_toStartOf="parent"
@@ -380,8 +258,8 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="150dp"
             android:layout_marginEnd="5dp"
-            android:text="Customer Name"
-            android:textSize="26sp"
+            android:text="Qty"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -395,44 +273,59 @@
             android:layout_marginEnd="5dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Age"
-            android:textSize="26sp"
+            android:hint="Name"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.464"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cusage" />
-
-        <CheckBox
-            android:id="@+id/online"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:text="Meet Online"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/consulm" />
-
-        <CheckBox
-            android:id="@+id/physical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
-            android:text="Meet Physical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/consulm" />
 
         <Button
             android:id="@+id/subbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="145dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="145dp"
             android:text="SUBMIT"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/online" />
+            app:layout_constraintTop_toBottomOf="@+id/qty" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="79dp"
+            android:text="Total Amount"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subbutton" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="84dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="10dp"
+            android:text="Rs."
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subbutton" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="145dp"
+            android:text="CONFIRM"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cusAddress" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
