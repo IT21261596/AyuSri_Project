@@ -22,52 +22,54 @@
         android:layout_width="343dp"
         android:layout_height="50dp"
 
-        android:background="@color/welcome"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   E-mail"
         android:imeOptions="actionDone"
         android:inputType="textEmailAddress"
+        android:paddingHorizontal="20dp"
         android:selectAllOnFocus="true"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/lpassword"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:background="@color/welcome"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/roundstyle2"
+        android:backgroundTint="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Password"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
+        android:paddingHorizontal="20dp"
         android:selectAllOnFocus="true"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintTop_toBottomOf="@+id/lemail" />
 
     <Button
         android:id="@+id/sigin"
         android:layout_width="197dp"
         android:layout_height="53dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
         android:background="@drawable/roundstyle2"
         android:backgroundTint="@color/green4"
         android:text="Sign In"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintTop_toBottomOf="@+id/lpassword" />
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -100,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="112dp"
         android:background="@color/green4"
         android:text="New user?   Sign up here"
@@ -117,6 +119,7 @@
         android:layout_height="431dp"
         android:layout_marginTop="27dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home" />
 

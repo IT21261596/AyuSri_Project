@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/newbk6">
+        android:background="@drawable/signupback">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
@@ -58,16 +58,16 @@
 
         <Button
             android:id="@+id/customerL"
-            android:layout_width="248dp"
-            android:layout_height="60dp"
+            android:layout_width="271dp"
+            android:layout_height="62dp"
             android:layout_marginStart="80dp"
             android:layout_marginTop="152dp"
             android:layout_marginEnd="80dp"
             android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/welcomenew"
-            android:text="Login as customer"
+            android:backgroundTint="@color/green4"
+            android:text="Login as a customer"
+            android:textColor="@color/black"
             android:textSize="23sp"
-            android:textColor="@color/green5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
@@ -81,9 +81,9 @@
             android:layout_marginTop="136dp"
             android:layout_marginEnd="80dp"
             android:background="@drawable/roundstyle2"
-            android:backgroundTint="@color/welcomenew"
-            android:text="login as doctor"
-            android:textColor="@color/green5"
+            android:backgroundTint="@color/green4"
+            android:text="login as a doctor"
+            android:textColor="@color/black"
             android:textSize="23sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
