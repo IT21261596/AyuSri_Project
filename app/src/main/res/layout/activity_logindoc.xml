@@ -15,14 +15,26 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bk">
+        android:background="@drawable/newbk6">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Welcome Back"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/demail"
             android:layout_width="343dp"
             android:layout_height="50dp"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="@color/welcome"
+            android:background="@color/white"
             android:backgroundTintMode="src_in"
             android:hint="   E-mail"
             android:imeOptions="actionDone"
@@ -33,14 +45,25 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.419" />
+            app:layout_constraintVertical_bias="0.622" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginEnd="30dp"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/nav_menu" />
 
         <EditText
             android:id="@+id/dpassword"
             android:layout_width="343dp"
             android:layout_height="50dp"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="@color/welcome"
+            android:background="@color/white"
             android:backgroundTintMode="src_in"
             android:hint="   Password"
             android:imeOptions="actionDone"
@@ -51,7 +74,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.546" />
+            app:layout_constraintVertical_bias="0.75" />
 
         <Button
             android:id="@+id/dsignin"
@@ -59,98 +82,36 @@
             android:layout_height="53dp"
             android:layout_marginStart="80dp"
             android:layout_marginEnd="80dp"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="@color/button2"
+            android:background="@drawable/roundstyle2"
+            android:backgroundTint="@color/green2"
             android:text="Sign In"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintHorizontal_bias="0.444"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.674" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="581dp"
-            android:background="@drawable/roundstyle"
-            android:backgroundTint="@color/green2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="151dp"
-                android:layout_height="151dp"
-                android:layout_marginEnd="94dp"
-                app:layout_constraintEnd_toStartOf="@+id/textView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="252dp"
-                android:layout_marginTop="44dp"
-                android:fontFamily="cursive"
-                android:text="AyuSri"
-                android:textColor="@color/black"
-                android:textSize="50sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <Button
-            android:id="@+id/dforgot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="80dp"
-            android:background="@color/green4"
-            android:text="forgot password"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.541"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dsignin" />
+            app:layout_constraintVertical_bias="0.878" />
 
         <Button
             android:id="@+id/dcreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="22dp"
             android:layout_marginEnd="80dp"
             android:background="@color/green4"
-            android:text="Create an account"
+            android:text="New user?   Sign up here"
             android:textColor="#000000"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dforgot" />
+            app:layout_constraintTop_toBottomOf="@+id/dsignin" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
