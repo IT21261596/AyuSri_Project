@@ -4,19 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newbk6"
+    android:background="@drawable/signupback"
     android:textAlignment="center"
 
     tools:context=".createaccount">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="412dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
         android:text="Create Account"
-        android:textColor="@color/white"
+        android:textColor="#B3222020"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,9 +36,9 @@
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/white"
+        android:background="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Name"
         android:imeOptions="actionDone"
@@ -39,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <EditText
         android:id="@+id/cpassword1"
@@ -48,7 +57,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/white"
+        android:background="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Password"
         android:imeOptions="actionDone"
@@ -67,7 +76,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/white"
+        android:background="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Email"
         android:imeOptions="actionDone"
@@ -87,7 +96,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="34dp"
         android:background="@drawable/roundstyle2"
-        android:backgroundTint="@color/green2"
+        android:backgroundTint="@color/green4"
         android:text="Register"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -104,7 +113,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/white"
+        android:background="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Phone number"
         android:imeOptions="actionDone"

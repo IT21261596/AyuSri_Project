@@ -15,14 +15,14 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newbk6">
+    android:background="@drawable/signupback">
 
     <EditText
         android:id="@+id/lemail"
         android:layout_width="343dp"
         android:layout_height="50dp"
 
-        android:background="@color/white"
+        android:background="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   E-mail"
         android:imeOptions="actionDone"
@@ -39,7 +39,7 @@
         android:id="@+id/lpassword"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:background="@color/white"
+        android:background="@color/welcome"
         android:backgroundTintMode="src_in"
         android:hint="   Password"
         android:imeOptions="actionDone"
@@ -57,7 +57,7 @@
         android:layout_width="197dp"
         android:layout_height="53dp"
         android:background="@drawable/roundstyle2"
-        android:backgroundTint="@color/green2"
+        android:backgroundTint="@color/green4"
         android:text="Sign In"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -89,7 +89,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:text="Welcome Back"
-        android:textColor="@color/white"
+        android:textColor="#B3222020"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,6 +110,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sigin" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="601dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
