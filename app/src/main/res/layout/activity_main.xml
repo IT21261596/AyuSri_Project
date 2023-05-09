@@ -58,13 +58,17 @@
             android:layout_width="382dp"
             android:layout_height="300dp"
 
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="22dp"
             android:fontFamily="cursive"
             android:text="Due to the economic crisis in the country, the economic level of the people has also fallen to a low level.Therefore, people do not have time to think about their health level.And the cost for western medicines are also high.Due to all these factors, people's interest in their health has also decreased.Keeping these facts in mind, we have introduced 'AyuSri' application. Through this application,our sole aim is to help people to maintain good health."
             android:textAlignment="center"
             android:textColor="#F3EFEF"
             android:textSize="23sp"
-            tools:layout_editor_absoluteX="13dp"
-            tools:layout_editor_absoluteY="361dp" />
+            app:layout_constraintBottom_toTopOf="@+id/sigin2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
 
 
