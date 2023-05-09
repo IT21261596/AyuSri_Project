@@ -18,4 +18,7 @@
     <color name="button">#83E6DD</color>
     <color name="welcometag">#B3D0F8FD</color>
     <color name="button2">#ED5588</color>
+    <color name="navnew">#B3828282</color>
+    <color name="welcomenew">#c9c9c9</color>
+    <color name="home3">#663fa66f</color>
 </resources>

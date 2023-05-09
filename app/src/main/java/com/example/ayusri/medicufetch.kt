@@ -17,6 +17,7 @@ import com.example.ayusri.Adapters.DisAdapter
 import com.example.ayusri.Adapters.MediAdapter
 import com.example.ayusri.Models.Disease
 import com.example.ayusri.Models.Medicine
+import com.example.ayusri.calculate.ClientSetOrders
 import com.example.ayusri.calculate.MedicalMainActivity
 import com.google.firebase.database.*
 
@@ -59,7 +60,7 @@ class medicufetch : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object:MediAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@medicufetch, MedicalMainActivity::class.java)
+                            val intent = Intent(this@medicufetch, ClientSetOrders::class.java)
                             //put extra
                             intent.putExtra("mediID", medilist[position].mediID)
                             intent.putExtra("mediTopic", medilist[position].mediTopic)

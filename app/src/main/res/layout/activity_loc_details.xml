@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loc_details"
-    android:background="@drawable/bk">
+    android:background="@drawable/bwback">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginBottom="580dp"
         android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/green2"
+        android:backgroundTint="@color/navnew"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,7 +30,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logonew" />
 
         <TextView
             android:id="@+id/textView"
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="288dp"
         android:background="@drawable/roundstyle2"
-        android:backgroundTint="@color/welcome"
+        android:backgroundTint="@color/welcomenew"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

@@ -70,7 +70,7 @@ class   createaccount : AppCompatActivity() {
                         else
                         {
                             Toast.makeText(this,"User Already Registered", Toast.LENGTH_LONG).show()
-                            val intent= Intent(this,MainActivity::class.java)
+                            val intent= Intent(this,cusloginmain::class.java)
                             startActivity(intent)
                         }
                     }

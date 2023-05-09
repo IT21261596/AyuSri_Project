@@ -13,32 +13,21 @@ import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var docbtn: Button
-    private lateinit var disbtn: Button
-    private lateinit var locbtn: Button
+
 
     lateinit var toggle : ActionBarDrawerToggle
+    lateinit var main: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        disbtn=findViewById(R.id.diseases)
-        docbtn=findViewById(R.id.doctor)
-        locbtn = findViewById(R.id.locations)
-        docbtn.setOnClickListener{
-            var i = Intent(this, medicufetch::class.java)
+ main=findViewById(R.id.sigin2)
+        main.setOnClickListener{
+            var i=Intent(this,loginmain::class.java)
             startActivity(i)
         }
 
-        disbtn.setOnClickListener{
-            var i = Intent(this,discusfetch::class.java)
-            startActivity(i)
-        }
 
-        locbtn.setOnClickListener{
-            var i = Intent(this,locusfetch::class.java)
-            startActivity(i)
-        }
+
 
         val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)

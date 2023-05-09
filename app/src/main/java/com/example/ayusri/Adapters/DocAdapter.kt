@@ -23,7 +23,7 @@ class DocAdapter (private var DocList:ArrayList<Doctors>):
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.doc_list,parent,false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.doclistcustom,parent,false)
         return ViewHolder(itemView,mListener)
     }
 

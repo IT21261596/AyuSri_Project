@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".adddisease"
-    android:background="@drawable/bk">
+    android:background="@drawable/bwback">
 
     <Button
         android:id="@+id/diseaseaddbutton"
@@ -30,7 +30,7 @@
         android:layout_height="150dp"
         android:layout_marginBottom="581dp"
         android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/green2"
+        android:backgroundTint="@color/navnew"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,7 +58,7 @@
             android:layout_marginStart="40dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logonew" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -71,7 +71,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="34dp"
         android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/welcome"
+        android:backgroundTint="@color/welcomenew"
         android:backgroundTintMode="src_in"
         android:hint="   ENTER DISEASE"
         android:imeOptions="actionDone"
@@ -90,7 +90,7 @@
         android:layout_marginTop="296dp"
         android:layout_marginEnd="34dp"
         android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/welcome"
+        android:backgroundTint="@color/welcomenew"
         android:backgroundTintMode="src_in"
         android:hint="   ENTER DESCRIPTION"
         android:imeOptions="actionDone"

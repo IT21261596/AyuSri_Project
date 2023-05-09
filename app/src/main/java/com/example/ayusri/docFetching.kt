@@ -20,7 +20,7 @@ class docFetching : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_doc_fetching)
+        setContentView(R.layout.activity_doc_cusfetch)
 
         DocRecyclerView = findViewById(R.id.DocRecyclerView)
         DocRecyclerView.layoutManager = LinearLayoutManager(this)

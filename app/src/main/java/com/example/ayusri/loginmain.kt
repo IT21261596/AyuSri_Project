@@ -50,7 +50,13 @@ class loginmain : AppCompatActivity() {
             }
 
             fun home(){
-                var intent = Intent(this,MainActivity::class.java)
+                var intent = Intent(this,cusloginmain::class.java)
+                startActivity(intent)
+                Toast.makeText(applicationContext,"Clicked Home",Toast.LENGTH_SHORT).show()
+            }
+
+            fun logout(){
+                var intent = Intent(this,login::class.java)
                 startActivity(intent)
                 Toast.makeText(applicationContext,"Clicked Home",Toast.LENGTH_SHORT).show()
             }
@@ -66,6 +72,7 @@ class loginmain : AppCompatActivity() {
                 R.id.nav_login ->  login()
                 R.id.nav_share -> Toast.makeText(applicationContext, "Clicked Share",Toast.LENGTH_SHORT).show()
                 R.id.nav_rate_us -> Toast.makeText(applicationContext,"Clicked Rate us",Toast.LENGTH_SHORT).show()
+                R.id.nav_logout -> logout()
 
             }
 
