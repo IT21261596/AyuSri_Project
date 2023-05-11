@@ -11,7 +11,11 @@
         medicines. Then, if a person gets sick, they can easily find a solution from his own home. Through 
         it people’s health condition can be maintained well, and it helps to get rid of the economic 
         hardships that people have fallen into.
+        
+ <p align="center">       
  <img src ="https://github.com/devsandanayake/AyuSri_Project/assets/92626638/1cdd1f3a-59cb-407c-92aa-60c142e82b4b" width="200" height="400"/>
+</p>
+
 
 # ScreenShots
         
