@@ -17,7 +17,7 @@
 </p>
 
 
-# ScreenShots
+# UI
         
 <img src = "https://github.com/devsandanayake/AyuSri_Project/assets/92626638/a52aca77-5882-4fe6-be3c-d17babba7bb5" width="200" height="400"/>
 <img src="https://github.com/devsandanayake/AyuSri_Project/assets/92626638/9efe9acb-9599-4336-a978-79b725fc118c"  width="200" height="400"/>
